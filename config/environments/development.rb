@@ -42,17 +42,5 @@ Rails.application.configure do
   # Required for Heroku
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
-
-  # Sets Paperclip to upload images to Amazon S3
-  config.paperclip_defaults = {
-    :storage => :s3,
-    #AWS::S3::DEFAULT_HOST.replace "s3-us-west-2.amazonaws.com",
-    #:s3_host_name => 's3-us-west-2.amazonaws.com',
-    :s3_credentials => {
-      :bucket => 'jwpinteresting3',
-      :access_key_id => 'AKIAIUPPASZA33FAKZ6A',
-      :secret_access_key => '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'
-    }
-}
   
 end
